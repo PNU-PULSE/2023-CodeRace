@@ -1,5 +1,6 @@
-#풀이
+#sound_vortex 풀이
 
+문제 분류 : 트리 (dp?), bruteforce?
 ```
 
 #include <bits/stdc++.h>
@@ -53,3 +54,5 @@ int main() {
     Solve();
 }
 ```
+
+N에 bruteforce로 풀 수 있을 만큼이라고 적혀있어서 bruteforce로 풀어봤습니다. 이게 의도한 바인지는 잘 모르겠습니다...

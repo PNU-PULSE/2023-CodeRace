@@ -1,7 +1,7 @@
 #sound_vortex 풀이
 
 문제 분류 : 트리 (dp?), bruteforce?
-```
+```c++
 
 #include <bits/stdc++.h>
 #define endl '\n'

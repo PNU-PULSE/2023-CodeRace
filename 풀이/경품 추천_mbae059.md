@@ -1,4 +1,5 @@
-```
+```c++
+
 #include <bits/stdc++.h>
 #define endl '\n'
 #define rep(i, a, b) for (int i=a; i<=b; i++) 

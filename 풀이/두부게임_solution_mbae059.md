@@ -1,6 +1,7 @@
 #풀이
 
-```
+```c++
+
 #include <bits/stdc++.h>
 #define endl '\n'
 #define pbk push_back

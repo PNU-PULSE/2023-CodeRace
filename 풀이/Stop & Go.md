@@ -27,8 +27,8 @@ int main(void)
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
 
-    int N;
-    cin >> N;
+    int N, t;
+    cin >> N >> t;
     
     priority_queue<Data> pq;
 
@@ -45,10 +45,10 @@ int main(void)
     
     while(!pq.empty()) {
         top = pq.top();
-        if (top.c - pre_time < 1) {
+        if (top.c - pre_time < t) {
             cout << top.b;
         }
-        else if (top.c - pre_time == 1 && pre_road == top.a) {
+        else if (top.c - pre_time == t && pre_road == top.a) {
             cout << top.b;
         }
         pre_road = top.a;

@@ -1,9 +1,0 @@
-import random
-
-file = open('generate_random.inp', 'w')
-N = random.randrange(1, 5000000) #오백만
-file.write(str(N) + '\n')
-
-for i in range(N) :
-    S = random.randrange(1, 1000000) #백만
-    file.write(str(S) + ' ')

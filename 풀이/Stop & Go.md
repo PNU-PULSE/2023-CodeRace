@@ -29,8 +29,9 @@ int main(void)
 
     int N, t;
     cin >> N >> t;
-    
+
     priority_queue<Data> pq;
+    priority_queue<int, vector<int>, greater<int>> res; # 값 저장
 
     int a, b, c;
     for(int i = 0; i < N; ++i) {
@@ -42,18 +43,22 @@ int main(void)
     int pre_road = top.a;
     int pre_time = top.c;
     pq.pop();
-    
+
     while(!pq.empty()) {
         top = pq.top();
         if (top.c - pre_time < t) {
-            cout << top.b;
+            res.push(top.b);
         }
         else if (top.c - pre_time == t && pre_road == top.a) {
-            cout << top.b;
+            res.push(top.b);
         }
         pre_road = top.a;
         pre_time = top.c;
         pq.pop();
+    }
+    while(!res.empty()){ # 오름차순으로 출력
+        cout << res.top() << "\n";
+        res.pop();
     }
     return 0;
 }

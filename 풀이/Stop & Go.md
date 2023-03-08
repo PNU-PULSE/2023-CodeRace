@@ -56,7 +56,8 @@ int main(void)
         pre_time = top.c;
         pq.pop();
     }
-    while(!res.empty()){ # 오름차순으로 출력
+    if(res.empty()) cout << -1;                 # 없으면 -1 출력
+    while(!res.empty()){                        # 오름차순으로 출력
         cout << res.top() << "\n";
         res.pop();
     }

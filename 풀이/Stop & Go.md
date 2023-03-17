@@ -31,7 +31,7 @@ int main(void)
     cin >> N >> t;
 
     priority_queue<Data> pq;
-    priority_queue<int, vector<int>, greater<int>> res; # 값 저장
+    priority_queue<int, vector<int>, greater<int>> res; // 값 저장
 
     int a, b, c;
     for(int i = 0; i < N; ++i) {
@@ -56,8 +56,8 @@ int main(void)
         pre_time = top.c;
         pq.pop();
     }
-    if(res.empty()) cout << -1;                 # 없으면 -1 출력
-    while(!res.empty()){                        # 오름차순으로 출력
+    if(res.empty()) cout << -1;                 // 없으면 -1 출력
+    while(!res.empty()){                        // 오름차순으로 출력
         cout << res.top() << "\n";
         res.pop();
     }

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-#define MAX 501
+#define MAX 1001
 #define INF 987654321
 
 using namespace std;
